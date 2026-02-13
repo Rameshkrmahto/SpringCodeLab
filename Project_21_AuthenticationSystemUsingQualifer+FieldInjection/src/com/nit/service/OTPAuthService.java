@@ -1,0 +1,15 @@
+package com.nit.service;
+
+import org.springframework.stereotype.Component;
+
+@Component("otp")
+public class OTPAuthService implements AuthService{
+
+	@Override
+	public void authenticate() {
+
+       System.out.println("OTPAuthService.authenticate()");
+		
+	}
+
+}
