@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+    <bean id="smarks" class="com.nit.sbeans.SubjectMarks">
+    
+       <constructor-arg name="math" value="78"/>
+       <constructor-arg name="science" value="90"/>
+       <constructor-arg name="scocialScience" value="75"/>
+        
+  
+    </bean>
+    <bean id="examProcesser" class="com.nit.sbeans.ExamResultProcessor">
+    
+       <constructor-arg name="subjectMarks" ref="smarks"/>
+      
+  
+    </bean>
+</beans>
