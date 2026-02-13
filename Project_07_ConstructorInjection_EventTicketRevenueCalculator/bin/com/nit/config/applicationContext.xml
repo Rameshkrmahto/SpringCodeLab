@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+    <bean id="eventTicketRevenu" class="com.nit.sbeans.EventTicketRevenueCalculator">
+    
+       <constructor-arg name="vipTickets" value="50"/>
+       <constructor-arg name="regularTickets" value="150"/>
+       <constructor-arg name="vipTicketPrice" value="1200"/>
+       <constructor-arg name="regularTicketPrice" value="500"/>
+       
+        
+  
+    </bean>
+    
+</beans>
